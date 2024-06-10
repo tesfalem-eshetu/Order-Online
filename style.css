@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    height: 100vh; 
+   
+} 
+p , div ,input{
+    margin: 0; 
+}
+main{
+    padding-top: 0px;
+}
+  
+#container{
+    width: 600px;
+    height: 1100px;
+    margin: auto;
+    background-color: whitesmoke;
+    position: relative;
+}
+header {
+    width: 600px;
+    height: 167px;
+    background-image: url("assets/images/burgerHeader.jpg");
+    background-size: cover ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#logo-name{
+    padding-left: 40px;
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 39px;
+}
+#logo-description{
+    padding-left: 40px;
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 22.42px;
+}
+#menu-container{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.menu{
+    width: 508px;
+    height: 110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background: whitesmoke;
+    border-bottom: 1px solid rgb(140, 138, 138);
+}
+.menuMain{
+    display: flex;
+}
+.menuEmoji{
+    width: auto;
+    height: auto;
+    font-size: 78.72px;
+    margin-top :-12px;
+    margin-left: -15px;
+    opacity: 70%;
+}
+.name{
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-size: 28px;
+    color: black;
+}
+.ingredients{
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8B8B8B
+}
+.price{
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+}
+i{
+    font-size: 28px;
+    color: #3C3C3C;
+    text-align: right;
+}
+#order-container{
+    display: flex;
+    width: 508px;
+    margin: 25px auto 0 auto;
+    flex-direction: column;
+    gap: 25px;
+}
+#order-title{
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-size: 28px;
+    color: black;
+    text-align: center;
+}
+.order-list{
+    display: flex;
+    justify-content: space-between;
+}
+.indvidual-item{
+    display: flex;
+    gap: 0px;
+}
+.item-name{
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-size: 28px;
+    color: black;
+}
+.remove-btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: whitesmoke;
+    color: rgb(156, 82, 82) ;
+    border: none;
+    margin: 0px;
+}
+.item-price{
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    padding-right: 3px;
+}
+#order-total{
+    border-top: 2px solid rgb(48, 46, 46);
+    display: flex;
+    justify-content: space-between;
+}
+#total-title{
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-size: 28px;
+    color:#0E0E0E;
+}
+#total-price{
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-size: 20px;
+    color:#0E0E0E;
+    padding-top: 5px;
+    padding-right: 2px;
+}
+#order-btn{
+    height: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #16DB99;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2%;
+}
+#card-details{
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 350px;
+    height: 450px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 5.19px 5.19px 255px #00000080;
+    border: 1.3px solid #757575
+}
+#card-details p{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+}
+#card-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 50px;
+}
+#card-form input ,button{
+    border: 1.3px solid #757575;
+    margin: 0px 20px;
+    height: 40px;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+#card-form button{
+    color: whitesmoke;
+    background-color: #16DB99; 
+    border: none; 
+}
+
+#final-message p{
+    height: 30px;
+    width: 379px;
+    color: #065F46;
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    flex-grow: 1
+}
+#final-message{
+    display: none;
+    width: 504px;
+    margin: 30px auto 0 auto;
+    height: 120px;
+    align-items: center; 
+    background-color: #ECFDF5;
+}
+
+
+
